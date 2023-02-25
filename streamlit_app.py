@@ -3,8 +3,7 @@ import streamlit as st
 # import pyperclip
 
 # Step 1: Obtain OpenAI API key
-openai.api_key = st.secrets["API_Key"]
-# openai.api_key = ""
+openai.api_key = st.secrets["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"]
 
 
 def generate_cover_letter(prompt, model, temperature, max_tokens):
@@ -23,7 +22,7 @@ def generate_cover_letter(prompt, model, temperature, max_tokens):
 def main():
     st.set_page_config(page_title="AI求职信助手 OpenAI GPT Cover Letter Generator", page_icon=":guardsman:", layout="wide")
     st.title("OpenAI GPT 求职信助手\nOpenAI GPT Cover Letter Generator")
-    st.markdown("根据你的能力以及职位要求，由AI生成专业求职信。AI will help you generate a professional cover letter based on your profile and job description.)
+    st.markdown("根据你的能力以及职位要求，由AI生成专业求职信。AI will help you generate a professional cover letter based on your profile and job description.")
     
     # Get user input
     user_profile = st.text_area("输入你的特长 Your Profile:")
